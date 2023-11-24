@@ -4,7 +4,7 @@ using namespace std;
 class Half {
 private:
     int a; // Private variable to store the calculated half value
-    int b; // Private variable to hold the input value
+    int b; // Private variable to hold the input value.
 
 public:
     // Setter method to set the value of 'b'

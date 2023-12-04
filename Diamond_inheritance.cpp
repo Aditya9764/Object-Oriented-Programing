@@ -54,3 +54,47 @@ int main(){
 
 //The Diamond Problem occurs when a child class inherits from two parent classes who both share a common grandparent class. 
 //we have a class Child inheriting from classes Father and Mother. These two classes, in turn, inherit the class Person because both Father and Mother are Person.
+
+ //class Child inherits the traits of class Person twice—once from Father and again from Mother. This gives rise to ambiguity since the compiler fails to understand which way to go.
+
+#include<iostream>
+using namespace std;
+
+class Person { //class Person
+public:
+        // constructor 
+    Person(int x)
+    {
+        cout << "Person::Person(int) called" << endl; 
+    }
+};
+ 
+class Father : public Person { //class Father inherits Person
+public:
+
+    Father(int x):Person(x)
+    {
+       cout << "Father::Father(int) called" << endl;
+    }
+};
+ 
+class Mother : public Person { //class Mother inherits Person
+public:
+    Mother(int x):Person(x) 
+    {
+        cout << "Mother::Mother(int) called" << endl;
+    }
+};
+ 
+class Child : public Father, public Mother 
+{ //Child inherits Father and Mother
+public:
+    Child(int x):Mother(x), Father(x) {
+        cout << "Child::Child(int) called" << endl;
+    }
+};
+ 
+int main() {
+    Child child(30);
+}
+

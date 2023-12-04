@@ -98,3 +98,5 @@ int main() {
     Child child(30);
 }
 
+
+//The solution to the diamond problem is to use the virtual keyword

@@ -1,6 +1,6 @@
 // Implement deep copy constructor 
 // Implement shallow copy constructor 
-
+// simple copy constructor 
 #include <iostream>  
 using namespace std;  
 class A  

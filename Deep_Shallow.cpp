@@ -10,4 +10,11 @@ This ensures that the original and copied objects have their own separate copies
 
   In summary, the main difference lies in how they handle dynamically allocated memory and pointers. Shallow copy shares the same memory, while deep copy creates independent copies of the data
 
+// Note: C++ compiler implicitly creates a copy constructor and overloads assignment operator in order to perform shallow copy at compile time
+// Shallow copy constructer is created by compailer own  no need to write it 
+
+
+// we have to write deep copy constructer 
 */
+
+

@@ -4,8 +4,8 @@ using namespace std;
 // Creating a class named Complex to handle complex numbers
 class Complex {
     private:
-    int img; // Represents the imaginary part of the complex number
-    int real; // Represents the real part of the complex number
+    int img; // Represents the imaginary part of the complex number.
+    int real; // Represents the real part of the complex number.
     
     public:
     // Constructor to initialize the complex number with default values of 0

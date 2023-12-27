@@ -1,6 +1,6 @@
 
 // C++ Program to demonstrate
-// Use of template
+// Use of template.
 #include <iostream>
 using namespace std;
  
